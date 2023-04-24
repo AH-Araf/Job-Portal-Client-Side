@@ -1,0 +1,63 @@
+.ap-title{
+    background-color:lavender;
+    font-size: x-large;
+    font-weight: 500;
+    color: red;
+}
+.job-single-categoryZ{
+    background-color:aliceblue;
+    color: black;
+    padding: 30px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    margin: 20px 30px;
+    box-shadow: 5px 8px gainsboro;
+}
+.title5{
+    color: black;
+    font-weight: 500;
+}
+.title4{
+    color: green;
+    font-weight: 700;
+}
+.ap-title1{
+    font-size: larger;
+    font-weight: 600;
+}
+.applicant-image{
+    height: 160px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 516px){
+    .ap-title{
+        background-color:lavender;
+        font-size: large;
+        font-weight: 500;
+        color: red;
+        margin-top: 15px;
+    }
+    .job-single-categoryZ{
+        background-color:aliceblue;
+        color: black;
+        padding: 10px;
+        padding: 10px 10px;
+        margin-bottom: 20px;
+        margin: 20px 15px;
+        box-shadow: 5px 8px gainsboro;
+    }
+    .title5{
+        color: black;
+        font-weight: 500;
+    }
+    .title4{
+        color: green;
+        font-weight: 600;
+    }
+    .ap-title1{
+        font-size: larger;
+        font-weight: 600;
+    }
+}

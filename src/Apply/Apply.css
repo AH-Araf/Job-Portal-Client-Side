@@ -1,0 +1,38 @@
+.email-tit{
+    color: orange;
+    font-weight: 600;
+    color: darkblue;
+}
+.job-single-categoryS{
+    background-color:aliceblue;
+    color: black;
+    padding: 30px;
+    /* border-bottom-right-radius: 50px; */
+    box-shadow: 5px 8px gainsboro;
+}
+
+@media only screen and (max-width: 516px){
+    .email-job{
+        display: flex;
+        flex-direction: column;
+    }
+    .job-b-m{
+        margin-bottom: 25px;
+    }
+    .job-single-categoryS{
+        background-color:aliceblue;
+        color: black;
+        padding: 25px 10px;
+        
+        /* border-bottom-right-radius: 50px; */
+        box-shadow: 5px 8px gainsboro;
+    }
+    .formApply{
+        padding: 25px 10px;
+    }
+}
+@media only screen and (min-width: 516px) and (max-width:1180px) {
+    .formApply{
+        padding: 0px 50px;
+    }
+}

@@ -1,0 +1,48 @@
+.header-image{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.name{
+    color:black;
+    font-size: small;
+    font-weight: 700;
+}
+.header-option{
+    background-color: lightgray;
+    font-weight: 600;
+}
+.header-option1{
+    color: white;
+    font-weight: 600;
+}
+.header-option1:hover{
+    color: orange;
+    font-weight: 600;
+}
+.user-img{
+    background-color:lavender;
+    padding: 0px;
+    border-radius: 10px;
+}
+.btn-lout{
+    background-color:coral;
+    color: white;
+    font-weight: 700;
+    margin-right: 5px;
+    padding: 10px;
+    border: 3px solid black;
+}
+.btn-lout:hover{
+    background-color:darkred;
+    color: white;
+    font-weight: 700;
+    margin-right: 5px;
+    padding: 10px;
+    border: 3px solid white;
+}
+@media only screen and (max-width: 516px){
+    .btn-lout{
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,63 @@
+.no-job{
+    font-size: xx-large;
+    font-weight: 800;
+    padding: 200px;
+    margin-bottom: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(gray, white);
+    border: 3px solid black;
+}
+.marginDone{
+    margin-bottom: 500px;
+}
+.job-single-categoryF{
+    background-color:aliceblue;
+    color: black;
+    padding: 30px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 5px 8px gainsboro;
+}
+.job-single-categoryF:hover{
+    background-color:lavender;
+    color: black;
+    padding: 30px;
+    padding: 30px 90px;
+    margin-bottom: 20px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 5px 8px gainsboro;
+    
+}
+@media only screen and (max-width: 516px){
+    .no-job{
+        font-size:large;
+        font-weight: 500;
+        padding: 80px;
+        margin-bottom: 900px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .job-single-categoryF{
+        background-color:aliceblue;
+        color: black;
+        padding: 30px;
+        padding: 30px 20px;
+        margin-bottom: 20px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 5px 8px gainsboro;
+    }
+    .job-single-categoryF:hover{
+        background-color:lavender;
+        color: black;
+        padding: 30px;
+        padding: 30px 20px;
+        margin-bottom: 20px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 5px 8px gainsboro;
+        
+    }
+}

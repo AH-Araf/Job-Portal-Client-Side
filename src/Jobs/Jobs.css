@@ -1,0 +1,81 @@
+.all-jobs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 10px;   
+    gap: 40px 40px;      
+}
+.job-single-category{
+    background-color:aliceblue;
+    color: black;
+    padding: 30px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 5px 8px gainsboro;
+}
+.job-single-category:hover{
+    background-color:lavender;
+    color: black;
+    padding: 30px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 5px 8px gainsboro;
+    
+}
+.company-image{
+    height: 120px;
+    width: 220px;
+    border-radius: 10px;
+}
+.title{
+    font-size:x-large;
+    font-weight: 600;
+    text-shadow: 3px 3px gainsboro;
+}
+.title2{
+    font-weight: 500;
+    color: black;
+    font-size: medium;
+}
+.title3{
+    font-weight: 500;
+    color:darkorange;
+    font-size: medium;
+}
+
+.job-single-category1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lavender;
+    padding: 30px 200px;
+}
+.job-single-category2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lavender;
+    padding: 10px 0px;
+    
+}
+.job-single-category3{
+    background-color: lavender;
+    text-align:left;
+}
+.company-image1{
+    height: 140px;
+    width: 260px;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 516px){
+    .all-jobs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 10px;   
+        gap: 40px 40px;      
+    }
+    .job-single-category1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lavender;
+        padding: 8px 15px;
+    }
+}
