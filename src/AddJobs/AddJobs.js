@@ -44,9 +44,10 @@ const AddJobs = () => {
                     jobDescription: data.jobDescription,
                     skill: data.skill, 
                     category: data.category,
+                    deadline: data.deadline,
                     types: data.types,
                     image: imgData.data.url,
-                    email: user.email
+                    email: user.email,
                 }
 
                 // save doctor information to the database
@@ -106,6 +107,14 @@ const AddJobs = () => {
                         required: true
                     })} className="input input-bordered w-full max-w-xs" />
                     {errors.skill && <p className='text-red-500'>{errors.skill.message}</p>}
+                </div>
+
+                <div className="form-control w-full max-w-xs">
+                    <label className="label"> <span className="label-text">Application Deadline</span></label>
+                    <input placeholder="Ex- 10 January 2024" type="text" {...register("deadline", {
+                        required: true
+                    })} className="input input-bordered w-full max-w-xs" />
+                    {errors.deadline && <p className='text-red-500'>{errors.deadline.message}</p>}
                 </div>
                 
 

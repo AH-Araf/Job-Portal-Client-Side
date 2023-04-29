@@ -10,6 +10,9 @@
     /* border-bottom-right-radius: 50px; */
     box-shadow: 5px 8px gainsboro;
 }
+.btn-final-apply{
+   
+}
 
 @media only screen and (max-width: 516px){
     .email-job{

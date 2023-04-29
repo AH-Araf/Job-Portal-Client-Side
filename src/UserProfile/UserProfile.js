@@ -64,22 +64,22 @@ const UserProfile = () => {
             if(imgData.success){
                 console.log(imgData.data.url);
                 const doctor = {
-                    name: data.name, 
-                    applicantEmail: data.applicantEmail,
-                    pNumber: data.pNumber,
-                    linkedin: data.linkedin,
-                    aSkills : data.aSkills,
-                    address: data.address,
-                    categoryEdu: data.categoryEdu,
-                    image: imgData.data.url,
-                    aResume: data.aResume,
+                    uName: data.name, 
+                    ApplicantEmail: data.applicantEmail,
+                    uPNumber: data.pNumber,
+                    ulinkedin: data.linkedin,
+                    uaSkills : data.aSkills,
+                    uAddress: data.address,
+                    uCategoryEdu: data.categoryEdu,
+                    uImage: imgData.data.url,
+                    uaResume: data.aResume,
                     // companyEmail: email,
                     // appliedOn: job,
                     // jTypes: types,
                     // jId: _id,
                     applicantUserEmail: user.email
                 }
-
+                //uName, ApplicantEmail, uPNumber, ulinkedin, uaSkills, uAddress,  uCategoryEdu, uImage,  uaResume, applicantUserEmail
                 // save doctor information to the database
                 fetch('http://localhost:5000/userJobProfile', {
                     method: 'POST',

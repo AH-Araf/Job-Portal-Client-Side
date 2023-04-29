@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SingleTotal = ({x}) => {
-    const {name, applicantEmail,  pNumber, linkedin, aSkills, address, categoryEdu, image, companyEmail, appliedOn,jTypes,jId,applicantUserEmail, _id } = x;
+    const {name, applicantEmail,  pNumber, linkedin, aSkills, address, categoryEdu, imageApplicant, companyEmail, appliedOn,jTypes,jId,applicantUserEmail, _id } = x;
     
     return (
         <div>
             <div className=' job-single-categoryZ email-job grid grid-cols-3'>
             
             <div className=''>   
-            <img className='applicant-image'  src={image} alt="" />  <br />    
+            <img className='applicant-image'  src={imageApplicant} alt="" />  <br />    
             <h4 className="ap-title1">Applicant Name: {name}</h4>
             <div>
             

@@ -3,7 +3,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 
 const SingleJob = () => {
     const a = useLoaderData();
-    const {job, description, jobDescription, skill, category, types, _id, image } = a;
+    const {job, description, jobDescription, skill, category, types, _id, image, deadline } = a;
     // console.log(a)
 
     const [joba, setJob] = useState([])
@@ -26,7 +26,8 @@ const SingleJob = () => {
                 <div className='job-single-category3'>
             <p><span className='title2'>Job Category:</span> <span className='title3'>{category}</span></p>  
             <p><span className='title2'>Job Type:</span> <span className='title3'>{types}</span></p>  
-            <p><span className='title2'>Skills:</span> <span className='title3'>{skill}</span></p> 
+            <p><span className='title2'>Skills:</span> <span className='title3'>{skill}</span></p>
+            <p><span className='title2'>Deadline:</span> <span className='title3'>{deadline}</span></p> 
             
              
                 </div>

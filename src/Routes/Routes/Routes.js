@@ -21,6 +21,7 @@ import Applied from "../../Applied/Applied";
 import TotalApplicant from "../../TotalApplicant/TotalApplicant";
 import SingleApplicant from "../../TotalApplicant/SingleApplicant";
 import UserProfile from "../../UserProfile/UserProfile";
+import FinalApply from "../../Apply/FinalApply";
 
 
 
@@ -96,7 +97,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/userProfile',
-                element: <UserProfile></UserProfile>,
+                element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>,
             },
             {
                 path: '/applied',
@@ -105,6 +106,11 @@ export const routes = createBrowserRouter([
             {
                 path: '/apply/:id',
                 element: <Apply></Apply>,
+                loader: async ({params}) =>  fetch(`http://localhost:5000/apply/${params.id}`)
+            },
+            {
+                path: '/apply/:id',
+                element: <FinalApply></FinalApply>,
                 loader: async ({params}) =>  fetch(`http://localhost:5000/apply/${params.id}`)
             },
 

@@ -39,6 +39,7 @@ const Header = () => {
       <li className='header-option1'><Link to='/'>Home</Link></li>
       <li className='header-option1'><Link to='/jobs'>Jobs</Link></li>
       <li className='header-option1'><Link to='/applied'>Applied Jobs</Link></li>
+      <li className='header-option1'><Link to='/userProfile'>Job-Profile</Link></li>
       
       <li  tabIndex={0}>
         <Link>

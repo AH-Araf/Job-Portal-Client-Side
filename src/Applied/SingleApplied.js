@@ -2,13 +2,14 @@ import React from 'react';
 import './Applied.css'
 
 const SingleApplied = ({x}) => {
-    const {name, applicantEmail,  pNumber, linkedin, aSkills, address, categoryEdu, image, companyEmail, appliedOn,jTypes,jId,applicantUserEmail } = x;
+    const {name, image, applicantEmail,  pNumber, linkedin, aSkills, address, categoryEdu, imageApplicant, companyEmail, appliedOn,jTypes,jId,applicantUserEmail } = x;
+    // console.log(x)
     return (
         <div>
             <div className=' job-single-categoryZ email-job grid grid-cols-3'>
             
             <div className=''>   
-            <img className='applicant-image'  src={image} alt="" />  <br />    
+            <img className='applicant-image'  src={imageApplicant} alt="" />  <br />  
             <h4 className="ap-title1">Applicant Name: {name}</h4>
             <div>
             
@@ -27,7 +28,8 @@ const SingleApplied = ({x}) => {
                 <p><span className='title5'>Education:</span> <span className='title4'>{categoryEdu}</span></p>
             </div>
             <div className=' home-titleT'>
-                <h2 className=' ap-title'>About Job</h2>
+                <h2 className=' ap-title'>Applied To:</h2>
+                <img className='company-image6'  src={image} alt="" />  <br />   
                 <p><span className='title2'>Applied on:</span> {appliedOn}</p>
                 <p><span className='title2'>Company's Email:</span> {companyEmail}</p>
                 <p><span className='title2'>Job's type:</span> {jTypes}</p>

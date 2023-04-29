@@ -64,6 +64,31 @@
     width: 260px;
     border-radius: 10px;
 }
+.search-box{
+    border: 3.5px solid red;
+    margin: 0px 12px;
+    margin-top: 15px;
+    width: 450px;
+    height: 45px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    
+}
+.search-box:hover{
+    border: 3.5px solid orange;
+    margin: 0px 12px;
+    margin-top: 15px;
+    width: 450px;
+    height: 45px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    
+}
+.s-box-div{
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 516px){
     .all-jobs{
         display: grid;
