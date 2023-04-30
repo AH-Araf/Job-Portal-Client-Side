@@ -5,7 +5,7 @@ const PrivateFirm = () => {
     const a = 'Private-Firm';
     const [cat, setCat] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/jobss?category=${a}`)
+        fetch(`https://b-job-portal-server-side-ah-araf.vercel.app/jobss?category=${a}`)
             .then(res => res.json())
             .then(data => setCat(data))
     }, [a])

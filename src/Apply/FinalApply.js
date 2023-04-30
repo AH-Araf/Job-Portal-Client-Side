@@ -46,7 +46,7 @@ const FinalApply = ({x}) => {
                 }
 
                 // save doctor information to the database
-                fetch('http://localhost:5000/apply', {
+                fetch('https://b-job-portal-server-side-ah-araf.vercel.app/apply', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json', 

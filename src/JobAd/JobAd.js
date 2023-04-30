@@ -9,7 +9,7 @@ const JobAd = () => {
     // console.log(a);
     const [job, setJob] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/jobEmail?email=${user?.email}`)
+        fetch(`https://b-job-portal-server-side-ah-araf.vercel.app/jobEmail?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setJob(data))
     }, [user?.email])
@@ -18,7 +18,7 @@ const JobAd = () => {
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure?');
         if(proceed){
-            fetch(`http://localhost:5000/jobDelete/${id}`, {
+            fetch(`https://b-job-portal-server-side-ah-araf.vercel.app/jobDelete/${id}`, {
                 method: 'DELETE'
             })
             .then(res => res.json())

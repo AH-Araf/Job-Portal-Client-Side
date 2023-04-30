@@ -9,7 +9,7 @@ const SingleJobAd = ({x,handleDelete}) => {
 
     const [apply, setApply] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/jobId?jId=${_id}`)
+        fetch(`https://b-job-portal-server-side-ah-araf.vercel.app/jobId?jId=${_id}`)
             .then(res => res.json())
             .then(data => setApply(data))
     }, [_id])

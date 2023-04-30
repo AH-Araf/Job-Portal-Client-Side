@@ -17,7 +17,7 @@ const AddJobs = () => {
     
     const [users, setUsers] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/email?email=${user?.email}`)
+        fetch(`https://b-job-portal-server-side-ah-araf.vercel.app/email?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setUsers(data))
     }, [user?.email])
@@ -51,7 +51,7 @@ const AddJobs = () => {
                 }
 
                 // save doctor information to the database
-                fetch('http://localhost:5000/jobs', {
+                fetch('https://b-job-portal-server-side-ah-araf.vercel.app/jobs', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json', 

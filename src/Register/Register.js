@@ -41,7 +41,7 @@ const Register = () => {
 
     const saveUser = (name, email) =>{
         const user ={name, email};
-        fetch('http://localhost:5000/users', {
+        fetch('https://b-job-portal-server-side-ah-araf.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

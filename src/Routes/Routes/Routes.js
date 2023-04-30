@@ -34,12 +34,12 @@ export const routes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/joblimit'),
+                loader: () => fetch('https://b-job-portal-server-side-ah-araf.vercel.app/joblimit'),
             },
             {
                 path: '/jobs',
                 element: <Jobs></Jobs>,
-                loader: () => fetch('http://localhost:5000/jobs'),
+                loader: () => fetch('https://b-job-portal-server-side-ah-araf.vercel.app/jobs'),
             },
             {
                 path: '/login',
@@ -56,12 +56,12 @@ export const routes = createBrowserRouter([
             {
                 path: '/jobs/:id',
                 element: <PrivateRoute><SingleJob></SingleJob></PrivateRoute>,
-                loader: async ({params}) =>  fetch(`http://localhost:5000/jobs/${params.id}`)
+                loader: async ({params}) =>  fetch(`https://b-job-portal-server-side-ah-araf.vercel.app/jobs/${params.id}`)
             },
             {
                 path: '/applicant/:id',
                 element: <SingleApplicant></SingleApplicant>,
-                loader: async ({params}) =>  fetch(`http://localhost:5000/applicant/${params.id}`)
+                loader: async ({params}) =>  fetch(`https://b-job-portal-server-side-ah-araf.vercel.app/applicant/${params.id}`)
             },
             
             {
@@ -113,12 +113,12 @@ export const routes = createBrowserRouter([
             {
                 path: '/apply/:id',
                 element: <Apply></Apply>,
-                loader: async ({params}) =>  fetch(`http://localhost:5000/apply/${params.id}`)
+                loader: async ({params}) =>  fetch(`https://b-job-portal-server-side-ah-araf.vercel.app/apply/${params.id}`)
             },
             {
                 path: '/apply/:id',
                 element: <FinalApply></FinalApply>,
-                loader: async ({params}) =>  fetch(`http://localhost:5000/apply/${params.id}`)
+                loader: async ({params}) =>  fetch(`https://b-job-portal-server-side-ah-araf.vercel.app/apply/${params.id}`)
             },
 
 

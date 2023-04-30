@@ -7,7 +7,7 @@ const TotalApplicant = () => {
     // console.log(a);
     const [job, setJob] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/comEmail?companyEmail=${user?.email}`)
+        fetch(`https://b-job-portal-server-side-ah-araf.vercel.app/comEmail?companyEmail=${user?.email}`)
             .then(res => res.json())
             .then(data => setJob(data))
     }, [user?.email])

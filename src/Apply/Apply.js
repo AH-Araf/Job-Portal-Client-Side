@@ -17,7 +17,7 @@ const Apply = () => {
     const {user} = useContext(AuthContext);
     const [apply, setApply] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/userProfileEmail?applicantUserEmail=${user?.email}`)
+        fetch(`https://b-job-portal-server-side-ah-araf.vercel.app/userProfileEmail?applicantUserEmail=${user?.email}`)
             .then(res => res.json())
             .then(data => setApply(data))
     }, [user?.email])

@@ -81,4 +81,8 @@
         background-color:lavender;
         /* aliceblue */
     }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
 }

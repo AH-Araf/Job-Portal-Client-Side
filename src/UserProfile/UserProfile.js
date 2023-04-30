@@ -22,7 +22,7 @@ const UserProfile = () => {
     const {user} = useContext(AuthContext);
     const [job, setJob] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/userProfileEmail?applicantUserEmail=${user?.email}`)
+        fetch(`https://b-job-portal-server-side-ah-araf.vercel.app/userProfileEmail?applicantUserEmail=${user?.email}`)
             .then(res => res.json())
             .then(data => setJob(data))
     }, [user?.email])
@@ -33,7 +33,7 @@ const UserProfile = () => {
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure?');
         if(proceed){
-            fetch(`http://localhost:5000/userProfileDelete/${id}`, {
+            fetch(`https://b-job-portal-server-side-ah-araf.vercel.app/userProfileDelete/${id}`, {
                 method: 'DELETE'
             })
             .then(res => res.json())
@@ -81,7 +81,7 @@ const UserProfile = () => {
                 }
                 //uName, ApplicantEmail, uPNumber, ulinkedin, uaSkills, uAddress,  uCategoryEdu, uImage,  uaResume, applicantUserEmail
                 // save doctor information to the database
-                fetch('http://localhost:5000/userJobProfile', {
+                fetch('https://b-job-portal-server-side-ah-araf.vercel.app/userJobProfile', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json', 
