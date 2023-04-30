@@ -17,7 +17,47 @@
     background-color: red;
     color: white;
 }
-
+.Applicant-s-job{
+    font-size: larger;
+    font-weight: 600;
+    background-color:green;
+    color: white;
+}
+.Applicant-s-job-container{
+    border: 3px solid green;
+    border-radius: 10px;
+}
+.Applicant-s-job-container-small{
+    padding-left: 5px;
+}
+.applicant-details-box{
+    padding: 6px 8px;
+    margin: 14px 0px;
+    background-color:aliceblue;
+    /* aliceblue */
+}
+.applicant-image-job{
+    width: 75px;
+    height: 90px;
+    border: 3px solid gray;
+    border-radius: 8px;
+}
+.btn-app-det{
+    border: 2px solid orange;
+    padding: 0px 6px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: orangered;
+    border-radius: 6px;
+}
+.btn-app-det:hover{
+    border: 2px solid skyblue;
+    padding: 0px 6px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: skyblue;
+    border-radius: 6px;
+}
 @media only screen and (max-width: 516px){
     .email-job{
         display: flex;
@@ -31,5 +71,14 @@
         margin-bottom: 20px;
         border-bottom-right-radius: 50px;
         box-shadow: 5px 8px gainsboro;
+    }
+    .Applicant-s-job-container{
+        margin-top: 12px;
+    }
+    .applicant-details-box{
+        padding: 6px 8px;
+        margin: 12px 0px;
+        background-color:lavender;
+        /* aliceblue */
     }
 }

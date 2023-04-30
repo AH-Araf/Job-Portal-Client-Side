@@ -38,18 +38,34 @@ const Header = () => {
         
       <li className='header-option1'><Link to='/'>Home</Link></li>
       <li className='header-option1'><Link to='/jobs'>Jobs</Link></li>
-      <li className='header-option1'><Link to='/applied'>Applied Jobs</Link></li>
-      <li className='header-option1'><Link to='/userProfile'>Job-Profile</Link></li>
-      
+
       <li  tabIndex={0}>
         <Link>
-        <span className='header-option1'>Services ⬇</span>
+        <span className='header-option1'>Your Job ⬇</span>
           <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="0" height="20" viewBox="0 0 24 24"><path d=""/></svg>
         </Link>
         <ul className="p-2 bg-gray-600">
-          <li className='header-option1'><Link to='/addjobs'>Add Job</Link></li>
-          <li className='header-option1'><Link to='/jobAd'>Job Added</Link></li>
+        <li className='header-option1'><Link to='/applied'>Applied Jobs</Link></li>
+      <li className='header-option1'><Link to='/userProfile'>Job Profile</Link></li>
+          
+          
+        </ul>
+      </li>
+
+
+
+
+      
+      <li  tabIndex={0}>
+        <Link>
+        <span className='header-option1'>Hire Employees ⬇</span>
+          <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="0" height="20" viewBox="0 0 24 24"><path d=""/></svg>
+        </Link>
+        <ul className="p-2 bg-gray-600">
+          <li className='header-option1'><Link to='/addjobs'>Advertise For Jobs</Link></li>
+          <li className='header-option1'><Link to='/jobAd'>Added Jobs</Link></li>
           <li className='header-option1'><Link to='/totalApplicant'>Total Applicant</Link></li>
+          
           
         </ul>
       </li>
@@ -137,17 +153,32 @@ const Header = () => {
       
       <li className='header-option1'><Link to='/'>Home</Link></li>
       <li className='header-option1'><Link to='/jobs'>Jobs</Link></li>
-      <li className='header-option1'><Link to='/applied'>Applied-Jobs</Link></li>
-      <li className='header-option1'><Link to='/userProfile'>Job-Profile</Link></li>
+      
+
+
       <li  tabIndex={0}>
         <Link>
-        <span className='header-option1'>Services ⬇</span>
+        <span className='header-option1'>Your-Job ⬇</span>
           <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="0" height="20" viewBox="0 0 24 24"><path d=""/></svg>
         </Link>
         <ul className="p-2 bg-gray-600">
-          <li className='header-option1'><Link to='/addjobs'>Add-Job</Link></li>
-          <li className='header-option1'><Link to='/jobAd'>Job-Added</Link></li>
-          <li className='header-option1'><Link to='/totalApplicant'>Total-Applicant</Link></li>
+        <li className='header-option1'><Link to='/applied'>Applied Jobs</Link></li>
+      <li className='header-option1'><Link to='/userProfile'>Job Profile</Link></li>
+          
+          
+        </ul>
+      </li>
+
+
+      <li  tabIndex={0}>
+        <Link>
+        <span className='header-option1'>Hire-Employees ⬇</span>
+          <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="0" height="20" viewBox="0 0 24 24"><path d=""/></svg>
+        </Link>
+        <ul className="p-2 bg-gray-600">
+          <li className='header-option1'><Link to='/addjobs'>Advertise For Jobs</Link></li>
+          <li className='header-option1'><Link to='/jobAd'>Added Jobs</Link></li>
+          <li className='header-option1'><Link to='/totalApplicant'>Total Applicant</Link></li>
           
           
         </ul>
@@ -160,11 +191,11 @@ const Header = () => {
         </Link>
         <ul className="p-2 bg-gray-600">
           <li className='header-option1'><Link to='/organization'>Organization</Link></li>
-          <li className='header-option1'><Link to='/itSupport'>IT-Support</Link></li>
+          <li className='header-option1'><Link to='/itSupport'>IT Support</Link></li>
           <li className='header-option1'><Link to='/government'>Government</Link></li>
-          <li className='header-option1'><Link to='/semiGov'>Semi-Government</Link></li>
+          <li className='header-option1'><Link to='/semiGov'>Semi Government</Link></li>
           <li className='header-option1'><Link to='/ngo'>NGO</Link></li>
-          <li className='header-option1'><Link to='/privateFirm'>Private-Firm</Link></li>
+          <li className='header-option1'><Link to='/privateFirm'>Private Firm</Link></li>
           <li className='header-option1'><Link to='/agencies'>Agencies</Link></li>
         </ul>
       </li>

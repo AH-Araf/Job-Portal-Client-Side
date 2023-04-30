@@ -22,6 +22,7 @@ import TotalApplicant from "../../TotalApplicant/TotalApplicant";
 import SingleApplicant from "../../TotalApplicant/SingleApplicant";
 import UserProfile from "../../UserProfile/UserProfile";
 import FinalApply from "../../Apply/FinalApply";
+import JobCategoryApply from "../../JobAd/JobCategoryApply";
 
 
 
@@ -67,6 +68,12 @@ export const routes = createBrowserRouter([
                 path: '/organization',
                 element: <Organization></Organization>,
             },
+
+            {
+                path: '/jobCategoryApply',
+                element: <JobCategoryApply></JobCategoryApply>,
+            },
+            
             {
                 path: '/government',
                 element: <Government></Government>,
